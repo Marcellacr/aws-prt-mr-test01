@@ -33,7 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo ${{ secrets.PG_PASS }}
-          chmod 600 cahve.pem 
+          chmod 600 chave.pem 
           mkdir ola
           ls -all 
           echo Add other actions to build,
