@@ -32,7 +32,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo ${{ secrets.PG_PASS }}
+          echo ${{ secrets.PG_PASS }} > chave.pem
+          echo ${{ variable.DB_HOST }}
           chmod 600 chave.pem 
           mkdir ola
           ls -all 
